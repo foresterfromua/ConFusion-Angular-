@@ -19,7 +19,7 @@
         </md-hint>
       </mat-input-container>
 
-      <mat-input-containe dividerColor="{{password.invalid && !password.pristine ? 'warn' : 'primary'}}"r>
+      <mat-input-container dividerColor="{{password.invalid && !password.pristine ? 'warn' : 'primary'}}"r>
         <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" required>
         <md-hint>
           <span [hidden]="password.pristine">
